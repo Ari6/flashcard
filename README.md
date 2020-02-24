@@ -19,12 +19,13 @@
 	* Setting up for questions, import, etc.
 
 ## Model
-Question | 
--|-
-id | primary
-type | int
-sidea | text
-sideb | text
+
+Question | |
+-|- |
+id | primary 
+type | int 
+sidea | text 
+sideb | text 
 visible | int
 create | datetime
 update | datetime
