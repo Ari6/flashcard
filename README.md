@@ -20,12 +20,33 @@
 
 ## Model
 
-Question | |
+Question| |
 -|- |
-id | primary 
+id | primary key
 type | int 
 sidea | text 
 sideb | text 
 visible | int
+user | foreign key to User
+group | foreign key to Group
 create | datetime
 update | datetime
+
+Group | - |
+- | - |
+id | primary key
+g_name | string
+create | datetime
+update | datetime
+
+User - Django default
+
+Log | |
+- | -
+id | primary key
+User | foreign key
+Questioin | foreign key
+last_time_correct | boolean
+continuous_correct | int
+correct_count | int
+show_count | int
