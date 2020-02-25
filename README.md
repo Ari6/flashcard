@@ -26,7 +26,6 @@ id | primary key
 type | int 
 sidea | text 
 sideb | text 
-visible | int
 user | foreign key to User
 group | foreign key to Group
 create | datetime
@@ -38,6 +37,7 @@ id | primary key
 g_name | string
 create | datetime
 update | datetime
+visible | int
 
 User - Django default
 
@@ -50,3 +50,7 @@ last_time_correct | boolean
 continuous_correct | int
 correct_count | int
 show_count | int
+
+Config | |
+- | -
+remember_threshhold | int
